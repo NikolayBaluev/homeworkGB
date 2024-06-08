@@ -41,62 +41,65 @@
       </div>
     </div>
     <script>
-        "use strict";
-        //1 задание
-        /* Ко всем элементам, имеющим класс "dropdown-item" добавить еще один
-        класс "super-dropdown", необходимо использовать методы forEach
-        и querySelectorAll и свойство classList у элементов.*/
-        const classDropdownItem = document.querySelectorAll('.dropdown-item')
-        classDropdownItem.forEach(element => {
-            element.classList.add('super-dropdown')
-        });
-        // 2 задание
-        /*У элемента с классом btn необходимо убрать класс "btn-secondary", 
-        если он присутствует у этого элемента, либо добавить, если 
-        такого класса у элемента не было.*/
-        const classBtn = document.querySelectorAll('.btn')
+        // "use strict";
+        // //1 задание
+        // /* Ко всем элементам, имеющим класс "dropdown-item" добавить еще один
+        // класс "super-dropdown", необходимо использовать методы forEach
+        // и querySelectorAll и свойство classList у элементов.*/
+        // const classDropdownItem = document.querySelectorAll('.dropdown-item')
+        // classDropdownItem.forEach(element => {
+        //     element.classList.add('super-dropdown')
+        // });
+        // // 2 задание
+        // /*У элемента с классом btn необходимо убрать класс "btn-secondary", 
+        // если он присутствует у этого элемента, либо добавить, если 
+        // такого класса у элемента не было.*/
+        // const classBtn = document.querySelectorAll('.btn')
+        // // classBtn.forEach(element => {
+        // //     element.classList.contains('btn-secondary')
+        // //     ? element.classList.remove('btn-secondary')
+        // //         : element.classList.add('btn-secondary')
+        // //     }
+        // // );
         // classBtn.forEach(element => {
-        //     element.classList.contains('btn-secondary')
-        //     ? element.classList.remove('btn-secondary')
-        //         : element.classList.add('btn-secondary')
-        //     }
-        // );
-        classBtn.forEach(element => {
-            element.classList.toggle('btn-secondary')
-        });
+        //     element.classList.toggle('btn-secondary')
+        // });
 
-        // 3 задание
-        /* Необходимо удалить класс "dropdown-menu" у элемента, 
-        у которого присутствует класс "menu"*/
-        const classMenu = document.querySelectorAll('.menu')
-        classMenu.forEach(element => {
-            element.classList.remove("dropdown-menu")
-        });
+        // // 3 задание
+        // /* Необходимо удалить класс "dropdown-menu" у элемента, 
+        // у которого присутствует класс "menu"*/
+        // const classMenu = document.querySelectorAll('.menu')
+        // classMenu.forEach(element => {
+        //     element.classList.remove("dropdown-menu")
+        // });
 
-        //4 задание
-        /*Используя метод insertAdjacentHTML добавьте после div'a 
-        с классом "dropdown" следующую разметку*/
-        const classDropdown = document.querySelector('div.dropdown');
-        classDropdown.insertAdjacentHTML("afterbegin", `<a href="#">link</a>`);
+        // //4 задание
+        // /*Используя метод insertAdjacentHTML добавьте после div'a 
+        // с классом "dropdown" следующую разметку*/
+        // const classDropdown = document.querySelector('div.dropdown');
+        // classDropdown.insertAdjacentHTML("afterbegin", `<a href="#">link</a>`);
         
-        //5 Задание
-        /*У элемента с id "dropdownMenuButton" замените id на "superDropdown".*/
-        const iDropdownMenuButton = document.querySelector('#dropdownMenuButton');
-        iDropdownMenuButton.id = "superDropdown";
+        // //5 Задание
+        // /*У элемента с id "dropdownMenuButton" замените id на "superDropdown".*/
+        // const iDropdownMenuButton = document.querySelector('#dropdownMenuButton');
+        // iDropdownMenuButton.id = "superDropdown";
 
-        //6 Задание
-        /*Добавьте атрибут data-dd со значением 3 элементу у которого существует 
-        атрибут "aria-labelledby" равный "dropdownMenuButton" используя dataset.*/
-        const elAriaLabdby = document.querySelector(`[aria-labelledby = "dropdownMenuButton"]`)
-        if (elAriaLabdby) {
-            elAriaLabdby.dataset.dd = 3
-        }
+        // //6 Задание
+        // /*Добавьте атрибут data-dd со значением 3 элементу у которого существует 
+        // атрибут "aria-labelledby" равный "dropdownMenuButton" используя dataset.*/
+        // const elAriaLabdby = document.querySelector(`[aria-labelledby = "dropdownMenuButton"]`)
+        // if (elAriaLabdby) {
+        //     elAriaLabdby.dataset.dd = 3
+        // }
         
-        //7 Задание 
-        /*Удалите атрибут type у элемента с классом "dropdown-toggle".*/
-        const classDdtgl = document.querySelector('.dropdown-toggle')
-        classDdtgl.removeAttribute('type')
-
+        // //7 Задание 
+        // /*Удалите атрибут type у элемента с классом "dropdown-toggle".*/
+        // const classDdtgl = document.querySelector('.dropdown-toggle')
+        // classDdtgl.removeAttribute('type')
+        
+        function incrementString (strng) {
+  }
+    console.log(incrementString("foobar000"));
     </script>
   </body>
 </html>
