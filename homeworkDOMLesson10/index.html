@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-photos {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .container-img {
+            max-width: 100px;
+        }
+
+        .container-img-description{
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <!-- <button>Click me</button>
+        <img> -->
+    </div>
+
+    <script src = "/data.js"></script>
+    <script src="/app.js"></script>
+    <script src="/scriptAsync.js" type="module"></script>
+
+    <script>
+    "use strict";
+
+//     Задание 1
+// 1. Поиск в интернете (бесплатные api примеры).
+// 2. Найти любые данные, на произвольную тему.
+// 3. Создать файл data.js.
+// 4. Создать переменную которая будет хранить данные из публичных api.
+    
+    // const getData = JSON.parse(JSON.stringify(data));
+    // console.log(getData);    
+
+
+// Задание 2
+// 1. Создать файл index.html.
+// 2. Подключить data.js.
+// 3. Сформировать контент из данных (картинка загловок и параграф).
+// 4. Добавить данный контент в вёрстку.
+// 5. * Добавить стили при необходимости (по желанию).
+
+
+
+const getDataPhotos = JSON.parse(data)
+    
+    const contentElemClass = document.querySelector('.content')
+
+    getDataPhotos.forEach( items => {
+        
+        const containerPhotos = document.createElement('div')
+        containerPhotos.classList.add('container-photos')
+
+        const atributePhotosIMG =  document.createElement('img')
+        atributePhotosIMG.classList.add('container-img')
+        atributePhotosIMG.src = items.thumbnailUrl;
+        atributePhotosIMG.alt = 'фото'
+        containerPhotos.appendChild(atributePhotosIMG)
+
+        const atributePhotosTitle = document.createElement('p')
+        atributePhotosTitle.classList.add('container-img-description')
+        atributePhotosTitle.textContent = items.title
+        containerPhotos.appendChild(atributePhotosTitle)
+
+        contentElemClass.appendChild(containerPhotos)
+    });
+
+    </script>
+</body>
+</html>
