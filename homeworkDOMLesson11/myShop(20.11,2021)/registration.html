@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>registration</title>
+</head>
+<body>
+    <header class="main_header">
+        <div class="header__menu">
+            <div class="container header___menu">
+                <div class="left_menu">
+                    <a href="#" class="img__menu"><img src="images/header_logo.svg" alt="header_logo"></a>
+                    <a href="#" class="img__menu header__search">
+                        <img src="images/header_search.svg" alt="search"></a>
+                </div>
+                <div class="right_menu">
+                    <a href="#" class="img__menu img_menu_catalog">
+                        <img src="images/header_menu.svg" alt="menu"></a>
+                    <a href="#" class="img__menu header__user">
+                        <img src="images/header_user.svg" alt="user"></a>
+                    <a href="#" class="img__menu header__box">
+                        <img src="images/header_box.svg" alt="box"></a>
+                </div>
+            </div>
+        </div>
+        <div class="header_background">
+            <div class="container header__registration">
+                <h2 class="registrationHeader">REGISTRATION</h2>
+            </div>
+        </div>
+    </header>
+    <div class="container mainRegistration">
+        <form class="registrationLeft">
+            <p class="registrName">Your Name</p>
+            <input type="text" class="FirstName" placeholder="First Name">
+            <input type="text" class="LastName" placeholder="Last Name">
+            <div class="formRadio">
+                <div class="form_radio1">
+                    <input id="radio-1" type="radio" name="radio" value="1" checked>
+                    <label for="Male">Male</label>
+                </div>
+                <div class="form_radio2">
+                    <input id="radio-2" type="radio" name="radio" value="2">
+                    <label for="Female">Female</label>
+                </div>
+                <div class="form_radio3">
+                    <input id="radio-3" type="radio" name="radio" value="3">
+                    <label for="Other">Other</label>
+                </div>
+            </div>
+            <p class="registrLogPass">Login details</p>
+            <div class="inputLogPass"> 
+                <input class="formEmail" maxlength="25" size="40" placeholder="Email" name="mail" required>
+                <input class="formPassword" type="password" maxlength="25" size="40" placeholder="Password" name="password">
+                <p class="text_LogPass">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                <button class="buttomLogPass">JOIN NOW
+                    <img class="arrow_button" src="images_registration/arrow_registr.png" alt="arrow">
+                </button>
+            </div>
+        </form>
+        <div class="registrationRight">
+            <h2 class="textLoyalty">LOYALTY HAS ITS PERKS</h2>
+            <p class="textlistLoyalty">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+            <ul class="listLoyalty">
+                <li>15% off welcome offer</li>
+                <li>Free shipping, returns and exchanges on all orders</li>
+                <li>$10 off a purchase on your birthday</li>
+                <li>Early access to products</li>
+                <li>Exclusive offers & rewards</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="background__footer">
+            <div class="footer__aside">
+                <div class="aside__foter__info">
+                    <img class="img__portrait__footer" src="images/portrait__footer.png" alt="portrait">
+                    <p class="footer__aside__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                </div>
+                <div class="footer__subscribe">
+                    <h2 class ="footer__subscribe_text">SUBSCRIBE</h2>
+                    <p class ="footer__subscribe_text"> 
+                        FOR OUR NEWLETTER AND PROMOTION</p>
+                        <form>
+                            <div class="form__footer__subscribe">
+                            <input class="form__email" type="text" placeholder="Enter Your Email" name="mail" required>
+                            <input class="form__button" type="submit" value="Subscribe">
+                            </div>
+                        </form>
+                </div>
+        </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="container bottom__footer__info">
+            <p class="bottom_footer_text"> &copy; 2021  Brand  All Rights Reserved.</p>
+            <div class="bottom_footer_logo">
+                <a href="#" class="logo_footer"><img src="images/logo_facebook.png" alt="logo_fb"></a>
+            <a href="#" class="logo_footer"><img src="images_catalog/logo_insta_catalog.png" alt="insta"></a>
+            <a href="#" class="logo_footer"><img src="images/logo_Pinterest.png" alt="pinterest"></a>
+            <a href="#" class="logo_footer"><img src="images/logo_twitter.png" alt="twitter"></a>
+            </div>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
