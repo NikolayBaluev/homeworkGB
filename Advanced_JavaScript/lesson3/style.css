@@ -1,0 +1,115 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #444;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #004080;
+}
+
+form.review-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+}
+
+label, input, textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+input.product-name, textarea.review-text {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+ul.review-list li {
+    list-style: none;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+ul.review-list li button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff6666;
+}
+
+ul.review-list li button:hover {
+    background-color: #cc0000;
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul.product-list li {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul.product-list li:hover {
+    background-color: #e6f2ff;
+}
+
+.review-details {
+    margin: 20px;
+}
+
+.review-details h2 {
+    margin-bottom: 20px;
+}
+
+.review-details button.go-back {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
